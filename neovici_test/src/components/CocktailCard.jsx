@@ -30,7 +30,7 @@ const CocktailCard = ({ drink, addToCart }) => {
           <li key={ingredient + index}>{ingredient}</li>
         ))}
       </ul>
-      <button onClick={() => addToCart(ingredients)}>Add to cart</button>
+      <button onClick={() => addToCart(ingredients)}>Add to Cart</button>
     </div>
   );
 };

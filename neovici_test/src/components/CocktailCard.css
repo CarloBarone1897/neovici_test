@@ -3,6 +3,7 @@
     transition: 0.3s;
     width: 40%;
     padding: 1%;
+    justify-content: center;
   }
   
   .card:hover {
@@ -12,3 +13,4 @@
   ul{
     padding-left: 5%;
   }
+
