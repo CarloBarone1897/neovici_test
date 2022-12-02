@@ -96,10 +96,10 @@ At Neovici we use it extensively, so familiarity with it is very important.
 - fetch queries are made using the native fetch api:
   https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API - check.
 - you have to use the haunted hooks library:
-  https://github.com/matthewp/haunted - not check; I never used it before, and I preferred carrying out the project with what I already knew. I did indeed try to look at it, but I need a bit more studying before to carry out an actual project with it.
+  https://github.com/matthewp/haunted - not check; I never used it before, and I preferred carrying out the project with what I already knew. I'm currently going through Haunted documentation, if needed I can work a bit more on it and try to implement it.
 - the only UI libraries allowed are haunted and lit-html - same as above.
 - the app can be started locally by running these commands:
-  `git clone <repo url>`, `npm install`, `npm start` - np with that. it's the same in React.
+  `git clone <repo url>`, `npm install`, `npm start` - check
 
 ### Features self-assesment
 
@@ -113,7 +113,7 @@ NOTE: the shopping list deduplicates the items (if two cocktails contain Tequila
 
 ## GENERAL SELF-REMARKS
 
-This is a walking skeleton: the core functionalities are implemented and the app serves its scope. Though, there are several ameliorments that can be carried out in more time/with more skills. For instance:
+This is a walking skeleton: the core functionalities are implemented and the app serves its scope. Though, there are several ameliorments that can be carried out in more time. For instance:
 
 * Implement the toaster. Its debugging phase proved to take longer than expected; though, the functionalities it would be supposed to highlight are implemented: printing mock-up, loading of information, incorrect value inserted catching, and so on.
 * Improvement of the styling, UI- and UX-design-wise: better and softer shapes, fonts, animations are my insights on it; in general, the aspect of the app's interface can be improved under several points of wiev.
