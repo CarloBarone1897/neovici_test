@@ -39,22 +39,25 @@ const App = () => {
   };
 
   return (
-    // livello 1 a colonne
     <div className="main-container">
       <div className="level-2 searching-bar">
-        <form onChange={changeHandler} >
+        {" "}
+        {/*The "level" reference is a reminder 
+      to me about which div contains which*/}
+        <form onChange={changeHandler}>
           <input type="search" className="search-field"></input>
         </form>
       </div>
-      {/* livello 2 a righe */}
+      {/*level 2 - flex-orientation: rows!*/}
 
       <div className="level-2 drinks-and-list">
         <div className="drinks">
+          {/*Level 3, cocktails */}
           <DrinkList addToCart={addToCart} drinks={drinks} />
         </div>
 
         <div className="shopping-list">
-          {/* livello 3 larghezza 30% */}
+          {/*Level 3, narrow*/}
           <ShoppingList ingredients={ingredients} />
         </div>
       </div>

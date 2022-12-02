@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     background-color: lightblue;
+    
 }
 
 .level-2{
@@ -17,7 +18,7 @@
 }
 
 .drinks{
-  width: 65%;
+  width: 75%;
   background-color: lightcyan;
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +29,8 @@
 }
 
 .shopping-list {
-  width: 35%;
+  width: 25%;
+  position: static;
   background-color: lavender;
   padding: 20px;
 }
@@ -43,10 +45,56 @@ form,
   width: 100%;
 }
 
-img{
+img, h1, h2, p, ul{
   width: 100%
 }
 
 .card {
   width: 24%;
+}
+
+
+li {
+  font-size: 11px;
+}
+
+button {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+button:hover,
+button:focus {
+  background-color: #07c;
+}
+
+button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+button:active {
+  background-color: #0064bd;
+  box-shadow: none;
 }
