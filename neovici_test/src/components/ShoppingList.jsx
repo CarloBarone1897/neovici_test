@@ -6,13 +6,17 @@ const ShoppingList = ({ ingredients }) => {
   };
 
   return (
-    <div>
+    <div className="list">
       <h1>Shopping List</h1>
+      <ul>
       {ingredients.map((ingredient, index) => (
         <li key={ingredient + index}>{ingredient}</li>
       ))}
+      </ul>
       <button onClick={print}>Print</button>
+      
     </div>
+  
   );
 };
 

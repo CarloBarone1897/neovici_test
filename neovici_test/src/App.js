@@ -42,7 +42,7 @@ const App = () => {
     // livello 1 a colonne
     <div className="main-container">
       <div id="level-2" className="searching-bar">
-        <form onChange={changeHandler}>
+        <form onChange={changeHandler} >
           <div className="search-container">
             <input type="search" className="search-field"></input>
           </div>
@@ -50,13 +50,14 @@ const App = () => {
       </div>
       {/* livello 2 a righe */}
 
-      <div id="level-2" className="drinks-and-lwist">
-      <div id="level-3" className="shopping-list">
-          {/* livello 3 larghezza 30% */}
-          <ShoppingList ingredients={ingredients} />
-        </div>
+      <div id="level-2" className="drinks-and-list">
         <div id="level-3" className="drinks">
           <DrinkList addToCart={addToCart} drinks={drinks} />
+        </div>
+
+        <div id="level-3" className="shopping-list">
+          {/* livello 3 larghezza 30% */}
+          <ShoppingList ingredients={ingredients} />
         </div>
       </div>
     </div>

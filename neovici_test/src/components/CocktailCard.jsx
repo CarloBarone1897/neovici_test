@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 
 const CocktailCard = ({ drink, addToCart }) => {
+  
+  
+  
+  
+ 
   const [ingredients, setIngredients] = useState([]);
 
   // Runs when components render or when drink changes

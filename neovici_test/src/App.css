@@ -1,31 +1,48 @@
+
+
 .main-container{
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    
     align-items: flex-start;
+    background-color: lightblue;
 }
 
-.drinks-and-list{
-    width: 95%;
+.main-container div{
+    margin: 1%;    
+
+}
+#level-2{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-}
-.drinks{
-    display: block;
-    width: 70%;
-    order: 3;
-}
-.shopping-list {
-    display: block;
-    width: 30%;
-    order: 1;
 }
 
-img {
-    width: 30%;
+
+.searching-bar {
+   
+    justify-content: center;
+}
+.drinks{
+    align-self: left;
+    display: inline;
+    width: 65%;
+    order: 5;
+    background-color: lightcyan;
+}
+.shopping-list {
+    align-self: right;
+    display:inline;
+    width: 35%;
+    order: 1;
+    background-color: lavender;
+}
+img{
+    width: 100%
+}
+
+.card {
+  width: 20%;  
 }
