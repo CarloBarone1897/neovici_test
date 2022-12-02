@@ -6,9 +6,10 @@ const CocktailCard = ({ drink, addToCart }) => {
   // Runs when components render or when drink changes
   useEffect(() => {
     const tempIngredients = [];
-    // Loop through all 15 strings defined by API to search for ingredients
+    // Loop through all 15 possible ingredient strings defined by API to search for ingredients
     for (let index = 0; index < 15; index++) {
       if (drink["strIngredient" + (index + 1)]) {
+        //This "if" clause stops the cycle if the following element is "null"
         tempIngredients.push(drink["strIngredient" + (index + 1)]);
       }
     }
@@ -17,9 +18,9 @@ const CocktailCard = ({ drink, addToCart }) => {
   }, [drink]);
 
   return (
-    // Livello 4
+    // Level 4
     <div className="card" key={drink.idDrink}>
-      <img src={drink.strDrinkThumb} alt="cocktails"/>
+      <img src={drink.strDrinkThumb} alt="cocktails" />
       <br></br>
       <h2 className="main-title">{drink.strDrink}</h2>
       <p>
@@ -30,7 +31,8 @@ const CocktailCard = ({ drink, addToCart }) => {
           <li key={ingredient + index}>{ingredient}</li>
         ))}
       </ul>
-      <button onClick={() => addToCart(ingredients)}>Add to Cart</button>
+      <p className="instructions">{drink.strInstructions}</p>
+      <button onClick={() => addToCart(ingredients)}>Add to Cart</button> 
     </div>
   );
 };
