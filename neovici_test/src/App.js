@@ -21,9 +21,6 @@ const App = () => {
       console.log("error while searching for a drink", error);
     }
   };
-  const changeValue = (event) => {
-
-  }
   const addToCart = (newIngredients) => {
     const ingredientToAdd = [];
 
@@ -47,7 +44,6 @@ const App = () => {
       to me about which div contains which*/}
         <form onChange={changeHandler}>
           <input type="search" className="search-field"></input>
-          
         </form>
       </div>
       {/*level 2 - flex-orientation: rows!*/}
