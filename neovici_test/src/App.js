@@ -6,9 +6,8 @@ import ShoppingList from "./components/ShoppingList";
 const App = () => {
   const [drinks, setDrinks] = useState([]);
   const [ingredients, setIngredients] = useState([]);
-
   const changeHandler = async (event) => {
-    // Concat strings with `` for better readability
+    // Concat strings with `` for better readability, also I'm inserting a variable part in an URL
     const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${event.target.value}`;
 
     try {
@@ -22,7 +21,9 @@ const App = () => {
       console.log("error while searching for a drink", error);
     }
   };
+  const changeValue = (event) => {
 
+  }
   const addToCart = (newIngredients) => {
     const ingredientToAdd = [];
 
@@ -46,6 +47,7 @@ const App = () => {
       to me about which div contains which*/}
         <form onChange={changeHandler}>
           <input type="search" className="search-field"></input>
+          
         </form>
       </div>
       {/*level 2 - flex-orientation: rows!*/}
