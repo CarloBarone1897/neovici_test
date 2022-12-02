@@ -6,7 +6,7 @@ const ShoppingList = ({ ingredients }) => {
   };
 
   return (
-    <div className="list">
+    <>
       <h1>Shopping List</h1>
       <ul>
       {ingredients.map((ingredient, index) => (
@@ -14,9 +14,7 @@ const ShoppingList = ({ ingredients }) => {
       ))}
       </ul>
       <button onClick={print}>Print</button>
-      
-    </div>
-  
+    </>
   );
 };
 

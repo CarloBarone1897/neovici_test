@@ -41,21 +41,19 @@ const App = () => {
   return (
     // livello 1 a colonne
     <div className="main-container">
-      <div id="level-2" className="searching-bar">
+      <div className="level-2 searching-bar">
         <form onChange={changeHandler} >
-          <div className="search-container">
-            <input type="search" className="search-field"></input>
-          </div>
+          <input type="search" className="search-field"></input>
         </form>
       </div>
       {/* livello 2 a righe */}
 
-      <div id="level-2" className="drinks-and-list">
-        <div id="level-3" className="drinks">
+      <div className="level-2 drinks-and-list">
+        <div className="drinks">
           <DrinkList addToCart={addToCart} drinks={drinks} />
         </div>
 
-        <div id="level-3" className="shopping-list">
+        <div className="shopping-list">
           {/* livello 3 larghezza 30% */}
           <ShoppingList ingredients={ingredients} />
         </div>

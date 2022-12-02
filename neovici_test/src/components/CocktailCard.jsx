@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 
 const CocktailCard = ({ drink, addToCart }) => {
-  
-  
-  
-  
- 
   const [ingredients, setIngredients] = useState([]);
 
   // Runs when components render or when drink changes
@@ -23,7 +18,7 @@ const CocktailCard = ({ drink, addToCart }) => {
 
   return (
     // Livello 4
-    <div id="level-4" className="card" key={drink.idDrink}>
+    <div className="card" key={drink.idDrink}>
       <img src={drink.strDrinkThumb} alt="cocktails"/>
       <br></br>
       <h2 className="main-title">{drink.strDrink}</h2>
