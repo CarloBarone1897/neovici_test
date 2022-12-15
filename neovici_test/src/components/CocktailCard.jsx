@@ -32,7 +32,7 @@ const CocktailCard = ({ drink, addToCart }) => {
         ))}
       </ul>
       <p className="instructions">{drink.strInstructions}</p>
-      <button onClick={() => addToCart(ingredients)}>Add to Cart</button> 
+      <button onClick={() => addToCart(ingredients)}>Add to Cart</button>
     </div>
   );
 };
